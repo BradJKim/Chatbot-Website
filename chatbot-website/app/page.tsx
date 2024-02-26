@@ -1,13 +1,36 @@
 "use client";
 
-import { Message, experimental_useAssistant as useAssistant } from "ai/react";
 import { useEffect, useRef } from "react";
+import { useRouter } from 'next/navigation';
 
-export default function Home() {
+interface ChatbotProps {
+    onClick: () => void;
+    text: string;
+}
+
+const Chatbot: React.FC<ChatbotProps> = ({onClick, text}) => {
     return (
         <div>
-          <h1>Welcome to My Next.js App</h1>
-          <p>This is the default home page.</p>
+            <button onClick={onClick}>{text}</button>
         </div>
+    );
+}
+
+export default function Home() {
+    const router = useRouter();
+
+    return (
+        <main>
+            <div>
+            <h1>Welcome to My Next.js App</h1>
+            <p>This is the default home page.</p>
+            </div>
+
+            <Chatbot onClick={() => router.push('/chatbot1')} text="Chatbot1"/>
+            <Chatbot onClick={() => router.push('/chatbot2')} text="Chatbot2"/>
+            <Chatbot onClick={() => router.push('/chatbot3')} text="Chatbot3"/>
+            <Chatbot onClick={() => router.push('/chatbot4')} text="Chatbot4"/>
+            <Chatbot onClick={() => router.push('/chatbot5')} text="Chatbot5"/>
+        </main>
       );
 }
