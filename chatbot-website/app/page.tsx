@@ -26,11 +26,11 @@ export default function Home() {
             <p>This is the default home page.</p>
             </div>
 
-            <Chatbot onClick={() => router.push('/chatbot1')} text="Chatbot1"/>
-            <Chatbot onClick={() => router.push('/chatbot2')} text="Chatbot2"/>
-            <Chatbot onClick={() => router.push('/chatbot3')} text="Chatbot3"/>
-            <Chatbot onClick={() => router.push('/chatbot4')} text="Chatbot4"/>
-            <Chatbot onClick={() => router.push('/chatbot5')} text="Chatbot5"/>
+            <Chatbot onClick={() => router.push('/chatbots/bot1')} text="Chatbot1"/>
+            <Chatbot onClick={() => router.push('/chatbots/bot2')} text="Chatbot2"/>
+            <Chatbot onClick={() => router.push('/chatbots/bot3')} text="Chatbot3"/>
+            <Chatbot onClick={() => router.push('/chatbots/bot4')} text="Chatbot4"/>
+            <Chatbot onClick={() => router.push('/chatbots/bot5')} text="Chatbot5"/>
         </main>
       );
 }
