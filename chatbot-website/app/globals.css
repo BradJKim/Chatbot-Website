@@ -31,3 +31,8 @@ body {
     text-wrap: balance;
   }
 } */
+
+.flexbox-container {
+  display: flex;
+  flex-direction: row;
+}
