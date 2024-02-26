@@ -12,11 +12,11 @@ const roleToColorMap: Record<Message["role"], string> = {
   tool: ""
 };
 
-export default function Chat() {
+export default function Chatbot5() {
 
   const { status, messages, input, submitMessage, handleInputChange, error } =
     useAssistant({
-      api: "/api/assistant",
+      api: "/api/assistant5",
     });
 
   // When status changes to accepting messages, focus the input:
