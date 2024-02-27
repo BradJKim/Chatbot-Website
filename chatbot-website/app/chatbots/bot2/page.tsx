@@ -42,7 +42,9 @@ export default function Chatbot2() {
           //placeholder="blur" 
         />
       </div>
-
+      <h1 className="font-medium">
+          Chatbot 2
+      </h1>
       {error != null && (
         <div className="relative bg-red-500 text-white px-6 py-4 rounded-md">
           <span className="block sm:inline">

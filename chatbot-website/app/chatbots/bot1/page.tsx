@@ -6,7 +6,6 @@ import Image from 'next/image'
 import Bot1Image from '../../../public/images/robot1.png'
 import ScrollContainer from "@/app/components/scrollContainer";
 
-
 const roleToColorMap: Record<Message["role"], string> = {
   system: "red",
   user: "black",
@@ -43,7 +42,9 @@ export default function Chatbot1() {
           //placeholder="blur" 
         />
       </div>
-
+      <h1 className="font-medium">
+          Chatbot 1
+      </h1>
       {error != null && (
         <div className="relative bg-red-500 text-white px-6 py-4 rounded-md">
           <span className="block sm:inline">
