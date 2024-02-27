@@ -44,15 +44,15 @@ export default function Chatbot1() {
         />
       </div>
 
+      {error != null && (
+        <div className="relative bg-red-500 text-white px-6 py-4 rounded-md">
+          <span className="block sm:inline">
+            Error: {(error as any).toString()}
+          </span>
+        </div>
+      )}
+
       <div className="h-96 box-border p-4 border-2 border-black border-spacing-px	">
-        
-          {error != null && (
-            <div className="relative bg-red-500 text-white px-6 py-4 rounded-md">
-              <span className="block sm:inline">
-                Error: {(error as any).toString()}
-              </span>
-            </div>
-          )}
         <ScrollContainer>
           {messages.map((m: Message) => (
             <div
