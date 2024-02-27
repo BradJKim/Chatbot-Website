@@ -26,7 +26,8 @@ const Chatbot: React.FC<ChatbotProps> = ({onClick, text, image}) => {
                     padding: '10px 20px', // Adjust padding for size
                     border: '2px solid #ccc', // Border style
                     borderRadius: '5px', // Border radius for rounded corners
-                }}>{text}
+                }}>
+                {text}
                 <Image 
                     src={image} 
                     alt="Bot Image" 
@@ -56,6 +57,18 @@ export default function Home() {
                 <Chatbot onClick={() => router.push('/chatbots/bot3')} text="Chatbot3" image={Bot3Image}/>
                 <Chatbot onClick={() => router.push('/chatbots/bot4')} text="Chatbot4" image={Bot4Image}/>
                 <Chatbot onClick={() => router.push('/chatbots/bot5')} text="Chatbot5" image={Bot5Image}/> 
+            </div>
+
+            <div>
+                <button 
+                    onClick={() => router.push('/about')}
+                    style={{
+                        padding: '10px 20px', // Adjust padding for size
+                        border: '2px solid #ccc', // Border style
+                        borderRadius: '5px', // Border radius for rounded corners
+                    }}>
+                    About
+                </button>
             </div>
         </main>
       );
