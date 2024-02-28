@@ -19,7 +19,7 @@ export default function About() {
                     The chatbots are designed to provide assistance to the user and will provide relavent 
                 </p>
                 <p> 
-                    information and/or advice as long as it is within OpenAI's guidelines.
+                    information and/or advice as long as it is within OpenAI guidelines.
                 </p>
             </div>
             <div className="flex justify-center">
